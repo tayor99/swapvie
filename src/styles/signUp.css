@@ -1,0 +1,112 @@
+.signUp__logo {
+  margin-bottom: 30px;
+}
+
+.signUp__logo > h1 {
+  color: #121111e8;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.signUp__logo > h1 > span {
+  color: #fff;
+  background-color: #2196f3;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.signUp__details > h2 {
+  color: #121111e8;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.signUp__details > form {
+  margin-top: 15px;
+}
+.signUp__form {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+.signUp__form > label {
+  padding: 6px 16px;
+  border: 0.1px solid #c0c0c0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.signUp__icon {
+  color: #495057;
+}
+
+.signUp__form > input {
+  height: 35px;
+  width: 80%;
+  background: #eff3f6;
+  border: 0.1px solid #c0c0c0;
+  outline: #c7e5fc;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: border 300ms;
+}
+
+.signUp__form > input:focus {
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+.signUp__checkbox {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.signUp__checkbox > input {
+  width: 25px;
+  height: 20px;
+  margin-right: 5px;
+}
+.signUp__checkbox > label {
+  font-size: 0.9rem;
+}
+
+.signUp__btn {
+  margin-bottom: 10px;
+}
+
+.signUp__btn > button {
+  width: 85px;
+  height: 40px;
+  background-color: #2196f3;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.signUp__btn > button:hover {
+  filter: brightness(95%);
+}
+
+.signUp__btn > button:focus {
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #70b6f0;
+}
+
+.signUp__alt {
+  font-size: 0.8rem;
+}
+
+.signUp__alt > span {
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .signUp__form > input {
+    width: 90%;
+  }
+}
