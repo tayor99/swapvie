@@ -13,17 +13,48 @@ const CarouselComponent = () => {
     slidesToScroll: 1,
   };
   return (
-    <Slider {...settings}>
-      <div className="slide slide1">
-        <p className="legend">Legend 1</p>
-      </div>
-      <div className="slide slide2">
-        <p className="legend">Legend 2</p>
-      </div>
-      <div className="slide slide3">
-        <p className="legend">Legend 3</p>
-      </div>
-    </Slider>
+    <div className="auth__carousel">
+      <Slider {...settings}>
+        <div className="slide1">
+          <div className="slide">
+            <img
+              src="https://app.jetic.io/static/media/ControlHub.c38e37fd.png"
+              alt="lol"
+            />
+            <h3>Meet Swapive</h3>
+            <p className="legend">
+              {' '}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div className="slide2">
+          <div className="slide">
+            <img
+              src="https://app.jetic.io/static/media/ExchangeHub.5989fe89.png"
+              alt="lol"
+            />
+            <h3>Meet Swapive</h3>
+            <p className="legend">
+              {' '}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div className="slide3">
+          <div className="slide">
+            <img
+              src="https://app.jetic.io/static/media/Visual-builder.1da39a6a.png"
+              alt="lol"
+            />
+            <h3>Meet Swapive</h3>
+            <p className="legend">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </Slider>
+    </div>
   );
 };
 

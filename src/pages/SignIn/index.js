@@ -1,22 +1,20 @@
-import { AiOutlineMail, AiOutlineLock } from 'react-icons/ai';
 import '../../styles/auth.css';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
   return (
     <div className="auth">
-      <div className="auth__logo">
-        <h1>
-          <span>S</span> Swapive
-        </h1>
-      </div>
       <div className="auth__details">
-        <h2>Sign up into your account</h2>
+        <div className="auth__info">
+          <h2>Log in</h2>
+          <p>
+            Welcome to the Swapive platform, please enter your login credentials
+            below to start using the application
+          </p>
+        </div>
         <form>
           <div className="auth__form">
-            <label htmlFor="email">
-              <AiOutlineMail className="auth__icon" />
-            </label>
+            <label htmlFor="email">E-mail</label>
             <input
               type="email"
               name="email"
@@ -25,9 +23,7 @@ const SignIn = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="passsword">
-              <AiOutlineLock className="auth__icon" />
-            </label>
+            <label htmlFor="passsword">Password</label>
             <input
               type="password"
               name="password"
@@ -36,22 +32,26 @@ const SignIn = () => {
             />
           </div>
 
-          <div className="auth__checkbox">
-            <input type="checkbox" id="checkbox" />
-            <label htmlFor="checkbox">Save credentials.</label>
-          </div>
+          <Link to="/" className="auth__link login__reset">
+            Forgot password?
+          </Link>
 
-          <div className="auth__btn">
-            <button>Log in</button>
+          <hr className="authForm__line" />
+
+          <div className="login__options">
+            <div className="auth__checkbox">
+              <div className="checkbox">
+                <input type="checkbox" id="checkbox1" />
+                <label htmlFor="checkbox1">Remember Me</label>
+              </div>
+            </div>
+
+            <div className="auth__btn">
+              <button>Log in</button>
+            </div>
           </div>
         </form>
 
-        <p className="auth__alt">
-          Forgot password?{' '}
-          <Link to="/reset" className="auth__link">
-            Reset
-          </Link>
-        </p>
         <p className="auth__alt">
           Don’t have an account?{' '}
           <Link to="/" className="auth__link">

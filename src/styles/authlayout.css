@@ -1,37 +1,41 @@
 .authLayout {
-  width: 80%;
-  margin: 30px auto;
+  width: 100%;
   background-color: #fff;
-  height: 600px;
+  /* height: 600px; */
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
 }
-@media (max-width: 1120px) {
+/* @media (max-width: 1120px) {
   .authLayout {
     width: 90%;
   }
-}
+} */
 
 .authLayout__left {
   width: 50%;
-  padding: 30px;
+  background: #f9f9fb;
+  height: 100vh;
+  /* padding: 30px; */
 }
 .authLayout__right {
   width: 50%;
+  height: 100vh;
+  /* background-color: #702171; */
 }
 
 @media (max-width: 800px) {
   .authLayout {
-    width: 95%;
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
   .authLayout__left {
-    width: 90%;
+    width: 100%;
+    height: fit-content;
     padding: 30px;
   }
   .authLayout__right {
     width: 100%;
+    height: fit-content;
   }
 }

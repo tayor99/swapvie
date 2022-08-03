@@ -1,24 +1,17 @@
-import { BiUser } from 'react-icons/bi';
-import { AiOutlineMail, AiOutlinePhone, AiOutlineLock } from 'react-icons/ai';
-
 import { Link } from 'react-router-dom';
 
 import '../../styles/auth.css';
 const SignUp = () => {
   return (
     <div className="auth">
-      <div className="auth__logo">
-        <h1>
-          <span>S</span> Swapive
-        </h1>
-      </div>
       <div className="auth__details">
-        <h2>Sign up into your account</h2>
+        <h2>
+          Creating an account is free of charge and no credit card information
+          will be needed
+        </h2>
         <form>
           <div className="auth__form">
-            <label htmlFor="firstName">
-              <BiUser className="auth__icon" />
-            </label>
+            <label htmlFor="firstName">First Name</label>
             <input
               type="text"
               name="firstName"
@@ -27,9 +20,7 @@ const SignUp = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="lastName">
-              <BiUser className="auth__icon" />
-            </label>
+            <label htmlFor="lastName">Last Name</label>
             <input
               type="text"
               name="lastName"
@@ -38,9 +29,7 @@ const SignUp = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="phoneNumber">
-              <AiOutlinePhone className="auth__icon" />
-            </label>
+            <label htmlFor="phoneNumber">Phone Number</label>
             <input
               type="text"
               name="phoneNumber"
@@ -49,9 +38,7 @@ const SignUp = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="email">
-              <AiOutlineMail className="auth__icon" />
-            </label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
@@ -60,9 +47,7 @@ const SignUp = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="passsword">
-              <AiOutlineLock className="auth__icon" />
-            </label>
+            <label htmlFor="passsword">Password</label>
             <input
               type="password"
               name="password"
@@ -71,9 +56,7 @@ const SignUp = () => {
             />
           </div>
           <div className="auth__form">
-            <label htmlFor="confirmPassword">
-              <AiOutlineLock className="auth__icon" />
-            </label>
+            <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               type="password"
               name="confirmPassword"
@@ -81,23 +64,35 @@ const SignUp = () => {
               placeholder="Confirm Password"
             />
           </div>
+          <hr className="authForm__line" />
           <div className="auth__checkbox">
-            <input type="checkbox" id="checkbox" />
-            <label htmlFor="">
-              Send me the <b>Newsletter</b> weekly.
-            </label>
+            <div className="checkbox">
+              <input type="checkbox" id="checkbox1" />
+              <label htmlFor="checkbox1">
+                I've read and accept the <span>Terms of Service</span>
+              </label>
+            </div>
+
+            <div className="checkbox">
+              <input type="checkbox" id="checkbox2" />
+              <label htmlFor="checkbox2">Send me the Newsletter weekly.</label>
+            </div>
           </div>
 
           <div className="auth__btn">
-            <button>Sign up</button>
+            <button>Create my account</button>
           </div>
         </form>
 
         <p className="auth__alt">
           Already have an account?{' '}
-          <Link to="/signin" className="auth__link">
+          <Link to="/login" className="auth__link">
             Log in
           </Link>{' '}
+        </p>
+
+        <p className="auth__certification">
+          © 2022 Swapive, Inc. All rights reserved
         </p>
       </div>
     </div>
